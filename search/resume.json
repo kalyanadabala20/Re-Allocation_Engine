@@ -1,0 +1,109 @@
+{
+  "attested": false,
+  "attested_date": null,
+  "attestation_note": "TODO (you): find 3 things this import got wrong vs. reality, fix them, flip attested:true, list them here. Candidates flagged in records below with \"_check\".",
+
+  "person": {
+    "name": "Kalyan Satwik Adabala",
+    "email": "kalyanadabala@outlook.com",
+    "phone": "(617) 893-8799",
+    "github": "kalyanadabala",
+    "linkedin": "KalyanAdabala"
+  },
+
+  "education": [
+    {
+      "id": "edu_neu",
+      "institution": "Northeastern University",
+      "location": "Boston, USA",
+      "degree": "M.S. Information Systems",
+      "start": "2024-09",
+      "end": "2026-08",
+      "status": "in_progress"
+    },
+    {
+      "id": "edu_mit",
+      "institution": "Manipal Institute of Technology",
+      "location": "Manipal, India",
+      "degree": "B.E. Industrial and Production Engineering",
+      "minor": "Python Programming",
+      "start": "2020-09",
+      "end": "2024-05",
+      "status": "completed"
+    }
+  ],
+
+  "experience": [
+    {
+      "id": "exp_ssogen",
+      "company": "SSOGEN Corporation",
+      "title": "Operations Analyst (Intern)",
+      "start": "2026-01",
+      "end": "2026-05",
+      "type": "internship",
+      "bullets": [
+        "Analyzed 50K+ records of demand and usage data to identify capacity bottlenecks; reduced processing delays by 18%",
+        "Built Power BI dashboards tracking operational KPIs and throughput metrics",
+        "Partnered with cross-functional teams to define reporting/metric requirements and built Power BI solutions"
+      ],
+      "_check": "End date 2026-05 — confirm it's actually concluded and dates are exact, not rounded."
+    },
+    {
+      "id": "exp_airfusion",
+      "company": "Air Fusion",
+      "title": "Co-Founder, COO",
+      "start": "2025-03",
+      "end": "present",
+      "type": "venture",
+      "bullets": [
+        "Scaled multi-location air-fried chicken brand to 3 outlets; owned demand planning, procurement, inventory control, logistics",
+        "Built demand forecasting models (Python/Excel) + replenishment strategies: -30% stockouts, -20% ingredient waste",
+        "Root cause analysis on margin leakage/supply disruptions; led supplier sourcing and contract negotiation: +12% gross margin",
+        "Built Power BI dashboards for demand trends, inventory turnover, operational KPIs"
+      ],
+      "_check": "Title 'COO' and verb 'led supplier sourcing' — defensible in interview, or self-styled / shared with co-founder? This is the classic promoted-title spot."
+    }
+  ],
+
+  "projects": [
+    {
+      "id": "proj_retail_scm",
+      "name": "Retail Supply Chain Analytics & Inventory Optimization",
+      "date": "2025-10",
+      "scope": "10 stores, 3 DCs, 500+ SKUs",
+      "stack": ["ARIMA", "Prophet", "XGBoost", "SQL", "Power BI"],
+      "results": [
+        "MAPE 9.4%; +24% forecast accuracy over naive baseline",
+        "Multi-echelon safety-stock / reorder-point model: -19% simulated holding cost at 96% service level",
+        "RCA on stockout/overstock across 100K+ transactions: lead-time variability + promo spikes as drivers"
+      ],
+      "_check": "Personal/portfolio project (not employer) — confirm. Metrics (9.4% MAPE, 24%) defensible if asked to walk through?"
+    }
+  ],
+
+  "skills": {
+    "programming_tools": ["Python", "SQL (MySQL, SSMS)", "Advanced Excel", "Power BI", "Tableau"],
+    "analysis_modeling": ["Statistical Analysis", "Root Cause Analysis", "Capacity Planning", "Supply Allocation", "Demand Forecasting", "Lean/Six Sigma fundamentals", "Data Visualization"],
+    "supply_chain_ops": ["Inventory Management", "Supply Planning", "Procurement", "Logistics Coordination", "Process Optimization", "KPI Tracking", "Requirements Gathering", "Stakeholder Communication"],
+    "technologies": ["DBMS", "Machine Learning Fundamentals", "Predictive Analytics"],
+    "_check": "Tableau — every project listed is Power BI. Do you actually have demonstrable Tableau work, or is it padding? Same question for 'Machine Learning Fundamentals' as a claimed skill."
+  },
+
+  "achievements": [
+    {
+      "id": "ach_nasha",
+      "title": "Vice President, Nasha Mukth Club, MIT-Manipal",
+      "date": "2023-09",
+      "type": "leadership"
+    },
+    {
+      "id": "ach_rotman",
+      "title": "Datathon, Rotman School of Management — Top 10",
+      "date": "2023-10",
+      "type": "competition",
+      "_check": "'Top 10' — out of how many? Confirm the ranking is accurate as stated."
+    }
+  ],
+
+  "certifications": []
+}
