@@ -1,0 +1,41 @@
+# search/profile.yml
+# Drafted by agent from prior context. Fields marked CONFIRM need your verification
+# against actual documents (I-20, EAD timeline, DSO). Correct anything that drifted
+# toward "sounds good" before the engine runs on it.
+
+target_role: >
+  Supply chain analyst / planning analyst role where data drives forecasting,
+  inventory, capacity, and network performance decisions. Open to operations
+  analyst and data analyst roles in supply-chain-adjacent functions.
+  # CHECK: specific enough for the scorer? "data analyst" is broad — keep if true.
+
+visa:
+  type: F-1 OPT                 # CONFIRM: pre- or post-completion OPT given Aug 2026 grad
+  authorization_end_date: null  # CONFIRM: fill from EAD once issued/approved
+  unemployment_days_used: 0     # CONFIRM
+  unemployment_ceiling: 90
+  buffer_target_days: 80        # per the book — flag a role if it pushes you past this
+  stem_eligible: uncertain      # do NOT set to true until DSO confirms your CIP code qualifies
+  notes: >
+    STEM extension hinges on the degree's CIP code, not the job. Confirm with DSO.
+    If uncertain stays, engine should NOT gate on STEM eligibility yet.
+
+geography:
+  primary: ["Dallas-Fort Worth, TX"]
+  also_consider: ["Remote (US)"]
+  constraints: >
+    CONFIRM family/partner situation and whether relocation to DFW is firm or aspirational.
+
+industry:
+  targeting: ["supply chain / logistics", "operations", "consulting (e.g. enVista model)"]
+  company_size: ["mid-market", "public", "Series B+"]   # CHECK against reality
+  hard_exclusions: []                                     # CHECK: anything you won't work in
+
+sponsorship:
+  requires_sponsorship: true    # CONFIRM — drives the hard gate
+  gate_rule: >
+    If require sponsorship == true: a company with no H-1B/visa-sponsorship history
+    is SKIP regardless of fit. State explicitly because it overrides the fit score.
+  e_verify_required: true       # for STEM OPT extension — employer must be E-Verify enrolled
+  # NOTE: e_verify is a gate for STEM-extension roles specifically; don't conflate
+  # with general sponsorship. Confirm how you want the engine to weight it.
